@@ -2075,7 +2075,7 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		border: 0;
-		border-radius: 0;
+		border-radius: 10px;
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -2591,6 +2591,7 @@ input, select, textarea {
 
 	.image {
 		border: 0;
+		border-radius: ;
 		display: inline-block;
 		position: relative;
 	}
@@ -3565,6 +3566,7 @@ input, select, textarea {
 			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 			pointer-events: auto;
 			border-style: solid;
+			border-radius: 20px;
 			border-color: #ffffff;
 			border-width: 5px !important;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -3576,11 +3578,6 @@ input, select, textarea {
 			text-transform: uppercase;
 			visibility: visible;
 		}
-
-			#header .logo:hover {
-				border-color: #18bfef !important;
-				color: #18bfef !important;
-			}
 
 		@media screen and (max-width: 980px) {
 
@@ -3719,11 +3716,12 @@ input, select, textarea {
 
 					#nav ul.links li a:hover {
 						color: inherit !important;
-						background-color: rgba(255, 255, 255, 0.1);
+						background-image: -moz-linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
 					}
 
 				#nav ul.links li.active {
-					background-color: #ffffff;
+					background-image: -moz-linear-gradient( rgba(124, 124, 124, 0),white );
+					
 				}
 
 					#nav ul.links li.active a {
